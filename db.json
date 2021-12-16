@@ -1,0 +1,62 @@
+{
+    "noticias": [
+        {
+        "id": 1,
+        "titulo": "noti0'",
+        "descricao": "not01"
+        },
+        {
+        "titulo": "noti02",
+        "descricao": "noti02",
+        "id": 2
+        },
+        {
+        "titulo": "noti03",
+        "descricao": "noti03",
+        "id": 3
+        },
+        {
+        "titulo": "noti04",
+        "descricao": "noti04",
+        "id": 4
+        },
+        {
+        "titulo": "noti05",
+        "descricao": "noti05",
+        "id": 5
+        },
+        {
+        "titulo": "noti06",
+        "descricao": "noti06",
+        "id": 6
+        }
+    ],
+
+    "listaProdutos": [
+        {
+            "imagem": "../assets/img/produto.jpg",
+            "titulo": "Kit Teclado Mouse Gamer Azul Vx Gaming Grifo",
+            "preco": 99.99,
+            "id": 1
+        },
+        {
+            "imagem" :"../assets/img/mousegamer.jpg",
+            "titulo": "Mouse Gamer 2400 Dpi Vx Gaming Sark",
+            "preco": 49.99,
+            "id": 2
+        },
+        {
+            "imagem" :"../assets/img/kitvermelho.jpg",
+            "titulo": "Kit Teclado Mouse Gamer Vermelho Vx Gaming Grifo",
+            "preco": 99.99,
+            "id": 3
+        },
+        {
+            "imagem" :"../assets/img/headset.jpg",
+            "titulo": "Headset Gamer Scorpion Com Fio Rgb Gh-x1000",
+            "preco": 99.99,
+            "id": 4
+        }
+        
+    ]
+}

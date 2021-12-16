@@ -1,0 +1,296 @@
+<main>
+    <section class="banner01" >
+        <div class="container-externo">
+            <div class="container-banner01">
+                <img src="./assets/img/mulhergamer.png" alt="Mulher jogando"/>      
+                <div class="texto-banner01">                      
+                    <h1>LINHA PC GAMER</h1>
+                    <p>Mussum Ipsum, cacilds vidis litro abertis. Si num tem leite então bota uma pinga aí cumpadi! Diuretics paradis num copo é motivis de denguis. Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Quem num gosta di mim que vai caçá sua turmis!</p>
+                    <a href="#">SAIBA MAIS</a>                        
+                </div>
+            </div>
+        </div>
+    </section>                       
+    
+    <section class="banner02">
+        <div class="container-externo02">
+            <div class="container-banner02">
+                <div class="texto-banner02">
+                    <h1>LINHA CONSOLE</h1>
+                    <p>Mussum Ipsum, cacilds vidis litro abertis. Si num tem leite então bota uma pinga aí cumpadi! Diuretics paradis num copo é motivis de denguis. Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Quem num gosta di mim que vai caçá sua turmis!</p>
+                    <a href="#">SAIBA MAIS</a>
+                </div>
+                 <img src="./assets/img/meninojogando.png" alt="Meninojogando"/>
+            </div>
+        </div>
+     </section>
+
+     <section class="banner-newsletter">                
+         <div class="container-newsletter">                    
+             <img src="./assets/img/logo.png" alt="Logo do site Game Mania">
+             <div class="texto-newsletter">
+                 <p>FIQUE POR DENTRO DAS NOVIDADES. ASSINE NOSSA NEWSLETTER</p>
+             </div>                    
+             <form #userForm="ngForm" (ngSubmit)="onSubmit()" class="cadastro-newsletter" action="">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       " class="cadastro-newsletter" action="">
+                 <input id="campo-email" type="email" placeholder="  seuemail@email.com.br" required name="email" [(ngModel)]="userModel.email">
+                 <button type="submit"><i class="fas fa-arrow-right"></i></button>
+             </form>
+
+          </div>
+     </section>
+
+     <section class="container-grid row">
+         <div id="carouselExampleControls" class="secao-produtos col carousel slide" data-ride="carousel">
+             <h2>Mais Vendidos</h2>
+             
+             <div class="container-card-externo01">
+                 <a>
+                     <i class="fas fa-angle-left" aria-hidden="true"></i>
+                 </a>
+                 <div id="espaco-mais-vendidos" class="container-card-externo02 carousel-inner">
+                     <div  class="container-card-externo">
+                         <div *ngFor="let produtos of listaProdutos" class="container-card">
+                                 <div>
+                                     <img [src]=produtos.imagem alt="Imagem do Produto">
+                                     <h3>{{ produtos.titulo }}</h3>
+                                 </div>
+                                 <div>
+                                     <div class="preco-produto">
+                                        R$ {{ produtos.preco }}
+                                     </div>
+                                     <div>
+                                         <span>À vista no pix</span>
+                                     </div>
+                                 </div>                               
+                                 <a href="#">Comprar</a>
+                         </div>                                                        
+                     </div>
+
+                     <!-- <div class="container-card-externo">
+                         <div class="container-card">
+                                 <div>
+                                     <img src="../assets/img/produto.jpg" alt="Imagem do Produto">
+                                     <h3>Titulo do Produto</h3>
+                                 </div>
+                                 <div>
+                                     <div class="preco-produto">
+                                         R$ 99,99
+                                     </div>
+                                     <div>
+                                         <span>À vista no pix</span>
+                                     </div>
+                                 </div>                               
+                                 <a href="#">Comprar</a>
+                         </div>                                                        
+                     </div>
+
+                     <div class="container-card-externo">
+                         <div class="container-card">
+                                 <div>
+                                     <img src="../assets/img/produto.jpg" alt="Imagem do Produto">
+                                     <h3>Titulo do Produto</h3>
+                                 </div>
+                                 <div>
+                                     <div class="preco-produto">
+                                         R$ 99,99
+                                     </div>
+                                     <div>
+                                         <span>À vista no pix</span>
+                                     </div>
+                                 </div>                               
+                                 <a href="#">Comprar</a>
+                         </div>                                                        
+                     </div>
+
+                     <div class="container-card-externo">
+                         <div class="container-card">
+                                 <div>
+                                     <img src="../assets/img/produto.jpg" alt="Imagem do Produto">
+                                     <h3>Titulo do Produto</h3>
+                                 </div>
+                                 <div>
+                                     <div class="preco-produto">
+                                         R$ 99,99
+                                     </div>
+                                     <div>
+                                         <span>À vista no pix</span>
+                                     </div>
+                                 </div>                               
+                                 <a href="#">Comprar</a>
+                         </div>                                                        
+                     </div>
+                     
+                 </div> -->
+                 <a>
+                     <i class="fas fa-angle-right" aria-hidden="true"></i>
+                 </a>
+             </div>
+         </div>
+         <div id="carouselExampleControls" class="secao-produtos col carousel slide" data-ride="carousel">
+             <h2>Periféricos</h2>
+             
+             <div class="container-card-externo01">
+                 <i class="fas fa-angle-left"></i>
+                 <div id="espaco-perifericos" class="container-card-externo02 carousel-inner">
+                     <!-- <div class="container-card-externo">
+                         <div class="container-card">
+                                 <div>
+                                     <img src="imagens/produto.jpg" alt="Imagem do Produto">
+                                     <h3>Titulo do Produto</h3>
+                                 </div>
+                                 <div>
+                                     <div class="preco-produto">
+                                         R$ 99,99
+                                     </div>
+                                     <div>
+                                         <span>À vista no pix</span>
+                                     </div>
+                                 </div>                               
+                                 <a href="#">Comprar</a>
+                         </div>                                                        
+                     </div>
+
+                     <div class="container-card-externo">
+                         <div class="container-card">
+                                 <div>
+                                     <img src="imagens/produto.jpg" alt="Imagem do Produto">
+                                     <h3>Titulo do Produto</h3>
+                                 </div>
+                                 <div>
+                                     <div class="preco-produto">
+                                         R$ 99,99
+                                     </div>
+                                     <div>
+                                         <span>À vista no pix</span>
+                                     </div>
+                                 </div>                               
+                                 <a href="#">Comprar</a>
+                         </div>                                                        
+                     </div>
+
+                     <div class="container-card-externo">
+                         <div class="container-card">
+                                 <div>
+                                     <img src="imagens/produto.jpg" alt="Imagem do Produto">
+                                     <h3>Titulo do Produto</h3>
+                                 </div>
+                                 <div>
+                                     <div class="preco-produto">
+                                         R$ 99,99
+                                     </div>
+                                     <div>
+                                         <span>À vista no pix</span>
+                                     </div>
+                                 </div>                               
+                                 <a href="#">Comprar</a>
+                         </div>                                                        
+                     </div>
+
+                     <div class="container-card-externo">
+                         <div class="container-card">
+                                 <div>
+                                     <img src="imagens/produto.jpg" alt="Imagem do Produto">
+                                     <h3>Titulo do Produto</h3>
+                                 </div>
+                                 <div>
+                                     <div class="preco-produto">
+                                         R$ 99,99
+                                     </div>
+                                     <div>
+                                         <span>À vista no pix</span>
+                                     </div>
+                                 </div>                               
+                                 <a href="#">Comprar</a>
+                         </div>                                                        
+                     </div> -->
+                     
+                 </div>
+                 <i class="fas fa-angle-right"></i>
+             </div>
+         </div>
+         <div id="carouselExampleControls" class="secao-produtos col carousel slide" data-ride="carousel">
+             <h2>Eletrônicos</h2>
+             
+             <div class="container-card-externo01">
+                 <i class="fas fa-angle-left"></i>
+                 <div id="espaco-eletronicos" class="container-card-externo02 carousel-inner">
+                     <!-- <div class="container-card-externo">
+                         <div class="container-card">
+                                 <div>
+                                     <img src="imagens/produto.jpg" alt="Imagem do Produto">
+                                     <h3>Titulo do Produto</h3>
+                                 </div>
+                                 <div>
+                                     <div class="preco-produto">
+                                         R$ 99,99
+                                     </div>
+                                     <div>
+                                         <span>À vista no pix</span>
+                                     </div>
+                                 </div>                               
+                                 <a href="#">Comprar</a>
+                         </div>                                                        
+                     </div>
+
+                     <div class="container-card-externo">
+                         <div class="container-card">
+                                 <div>
+                                     <img src="imagens/produto.jpg" alt="Imagem do Produto">
+                                     <h3>Titulo do Produto</h3>
+                                 </div>
+                                 <div>
+                                     <div class="preco-produto">
+                                         R$ 99,99
+                                     </div>
+                                     <div>
+                                         <span>À vista no pix</span>
+                                     </div>
+                                 </div>                               
+                                 <a href="#">Comprar</a>
+                         </div>                                                        
+                     </div>
+
+                     <div class="container-card-externo">
+                         <div class="container-card">
+                                 <div>
+                                     <img src="imagens/produto.jpg" alt="Imagem do Produto">
+                                     <h3>Titulo do Produto</h3>
+                                 </div>
+                                 <div>
+                                     <div class="preco-produto">
+                                         R$ 99,99
+                                     </div>
+                                     <div>
+                                         <span>À vista no pix</span>
+                                     </div>
+                                 </div>                               
+                                 <a href="#">Comprar</a>
+                         </div>                                                        
+                     </div>
+
+                     <div class="container-card-externo">
+                         <div class="container-card">
+                                 <div>
+                                     <img src="imagens/produto.jpg" alt="Imagem do Produto">
+                                     <h3>Titulo do Produto</h3>
+                                 </div>
+                                 <div>
+                                     <div class="preco-produto">
+                                         R$ 99,99
+                                     </div>
+                                     <div>
+                                         <span>À vista no pix</span>
+                                     </div>
+                                 </div>                               
+                                 <a href="#">Comprar</a>
+                         </div>                                                        
+                     </div> -->
+                     
+                 </div>
+                 <i class="fas fa-angle-right"></i>
+                </div>
+         </div> 
+        </div>                
+     </section>
+
+</main>

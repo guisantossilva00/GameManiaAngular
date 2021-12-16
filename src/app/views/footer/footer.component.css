@@ -1,0 +1,125 @@
+footer {
+    height: 295px;
+    background-color: #202121;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-footer img{
+    width: 150px;
+}
+
+.container-newsletter-footer {
+    display: none;
+}
+
+.texto-newsletter-footer {
+    width: 400px;
+    height: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    color: white;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.cadastro-newsletter-footer input {
+    width: 258px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+}
+
+.cadastro-newsletter-footer button {
+    color:#FF0000;
+    font-size: 22px;
+    border: none;
+    background: none;
+    position: relative;
+    right: 30px;  
+}
+
+.footer-links-principal a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    margin-top: 5px;
+}
+.footer-links {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px; 
+    margin-top: 5px;
+}
+
+.redes-sociais i {
+    font-size: 55px;
+    color: white;
+    margin: 6px;
+}
+
+@media screen and (max-width: 1762px){
+    .footer-links-principal a {
+        font-size: 22px;
+    }
+    .footer-links a{
+        font-size: 17px; 
+    }
+
+    .footer-links {
+        font-size: 17px; 
+    }
+    .redes-sociais i {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 1399px) {
+    footer {
+        height: 670px;
+    }
+
+    .footer-links-principal a {
+        font-size: 26px;
+    }
+
+    .footer-links a{
+        font-size: 22px; 
+    }
+
+    .footer-links {
+        font-size: 22px; 
+    }
+
+    .redes-sociais i {
+        font-size: 55px;
+    }
+
+    .container-newsletter-footer {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        height: 1350px;
+    }
+    .texto-newsletter-footer {
+        width: 400px;
+        height: 78px;
+    } 
+    
+    .pesquisa {
+        display: none;
+    }
+}

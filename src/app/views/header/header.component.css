@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f0f0f0;
+}
+/* header */
+
+.posicionamento-header {
+    position: relative;
+}
+
+.container-grid {
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header {
+    height: 80px;
+    background-color: #202121;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo-menu{
+    width: 74px;
+}
+
+.pesquisa {    
+    width: 460px;
+    margin: 15px;
+}
+
+.pesquisa input {
+    height: 34px;
+    width: 400px;
+    border-radius: 5px;
+    border: none;
+}
+.pesquisa button {
+    color:#FF0000;
+    font-size: 26px;
+    border: none;
+    background: none;
+    position: relative;
+    right: 38px;
+    top: 5px;   
+}
+
+.menu {
+    width: 660px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+}
+
+.menu a:hover {
+    color: #FF0000;
+}
+
+.barras {
+    display: none;
+}
+
+.carrinho-login {
+    width: 190px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carrinho-compras {
+    border: none;
+    background: none;
+    color: #FF0000;
+    font-size: 40px;
+}
+
+.fazer-Login {
+    background-color: #FF0000;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 15px 25px;
+}
+
+.fazer-Login:hover {
+    background-color: white;
+    color: #FF0000;
+}
+
+@media screen and (max-width: 1450px){
+    .container-grid {
+        width: 95%;
+    }
+
+    /* .pesquisa input {
+        width: 146px;
+    } */
+    
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 250px;
+        background-color: #202121;
+        position: absolute;
+        top: 70px;
+        right: -17px;
+    }
+
+    .menu a {
+        padding: 15px;
+    }
+
+    .menu-ativo {
+        display: flex;
+    }
+
+    .carrinho-login {
+        width: 240px;
+        display: flex;
+        align-items: center;
+    }
+    .barras {
+        display: flex;
+        color: white;
+        font-size: 40px;
+        text-decoration: none;
+    }
+}

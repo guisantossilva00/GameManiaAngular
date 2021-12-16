@@ -1,0 +1,93 @@
+<footer>
+
+    <div class="container-grid container-fluid ">
+        <div class="container-footer row row-cols-md-2 row-cols-sm-1 offset-xxl-0 offset-md-1 offset-sm-3 offset-1 gy-xxl-0 gy-sm-5 gy-5">
+             <div class="col-xxl ">                       
+                 <img src="./assets/img/logo.png" alt="Logo do site Game Mania">
+             </div> 
+
+             <div class="container-newsletter-footer row-cols row">
+                 <div class="texto-newsletter-footer">
+                     <p>FIQUE POR DENTRO DAS NOVIDADES. ASSINE NOSSA NEWSLETTER</p>
+                 </div>                    
+                 <form #userForm="ngForm" (ngSubmit)="onSubmit()" class="cadastro-newsletter-footer" action="">
+                     <input id="campo-email" type="email" placeholder="  seuemail@email.com.br" required name="email" [(ngModel)]="userModel.email">
+                     <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                 </form>
+
+             </div>
+            
+            <div class="col-xxl-2 col-md-6 ">
+                <div class="footer-links-principal">
+                    <a href="#">Sobre a Game Mania</a>
+                 </div>
+                 <div class="footer-links row">
+                     <a href="#" class="cols-12">Quem somos</a>
+                     <a href="#" class="cols-12">Localização</a>
+                     <a href="#" class="cols-12">Política de Privacidade</a>
+                 </div>
+            </div>
+
+            <div class="col-xxl-2 col-md-6">
+                <div class="footer-links-principal">
+                    <a href="#">Dúvidas</a>
+                 </div>
+                 <div class="footer-links row">
+                     <a href="#" class="cols-12">Entregas</a>
+                     <a href="#" class="cols-12">Garantia</a>
+                     <a href="#" class="cols-12">Como Comprar</a>
+                     <a href="#" class="cols-12">Formas de Pagamento</a>
+                 </div>
+
+            </div>
+
+            <div class="col-xxl-2 col-md-6">
+                <div class="footer-links-principal">
+                     <a href="#">Contato</a>
+                </div>
+                 <div class="footer-links row">
+                     <a href="#" class="cols-12">SAC</a>
+                     <a href="#" class="cols-12">Fale Conosco</a>
+                     <a href="#" class="cols-12">Termos de aceite</a>                        
+                 </div>
+            </div>
+
+            <div class="col-xxl-2 col-md-6">
+                <div class="footer-links-principal">
+                    <a href="#">Atendimento</a>
+                    <div class="footer-links row">
+                        <span class="cols-12">
+                            <p>Horário de atendimento:</p> 
+                            <p>Segunda à sexta-feira,</p>
+                            <p>09:00h às 18:00h.</p>
+                        </span>
+                        <span class="cols-12">
+                            <p>contato@gamemania.com.br</p>
+                        </span>
+                        <span class="cols-12">
+                            <p>(11) 98989-8989</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-xxl-2 col offset-xxl-0 offset-md-3 offset-sm-1">
+                 <div class="redes-sociais">
+                     <a href="#"><i class="fab fa-facebook-square"></i></a>
+                     <a href="#"><i class="fab fa-instagram-square"></i></a>
+                     <a href="#"><i class="fab fa-twitter-square"></i></a>
+                     <a href="#"><i class="fab fa-youtube-square"></i></a>
+                 </div>
+
+                 <div class="footer-links">
+                     <span>
+                         Siga-nos nas redes socias
+                     </span>
+                 </div>
+
+             </div>
+        </div>              
+
+    </div>
+
+</footer>
