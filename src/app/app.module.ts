@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -14,7 +15,8 @@ import { HomeComponent } from './views/home/home.component';
 import { EletronicosComponent } from './views/eletronicos/eletronicos.component';
 import { ConsoleComponent } from './views/console/console.component';
 import { PerifericosComponent } from './views/perifericos/perifericos.component';
-import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './views/login/login.component';
+import { NotFoundComponent } from './views/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,8 @@ import { FormsModule } from '@angular/forms';
     EletronicosComponent,
     ConsoleComponent,
     PerifericosComponent,
+    LoginComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,

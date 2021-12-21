@@ -19,4 +19,8 @@ export class ProdutosService {
   getProdutos(): Observable<Produtos[]> {
     return this.httpClient.get<Produtos[]>(this.url)
   }
+
+  postProdutos(produtos: Produtos): Observable<Produtos> {
+    return this.httpClient.post<Produtos>(this.url, JSON.stringify(produtos), this.httpOptions)
+  }
 }
